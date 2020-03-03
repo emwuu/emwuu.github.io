@@ -1,0 +1,165 @@
+
+		<div id="vid">
+			<div class="video-background">
+    			<div class="video-foreground">
+      				<iframe width="560" height="315" frameborder="0" [src]='safeURL' allowfullscreen></iframe>
+    			</div>
+    		</div>
+    		<!--div class="video-overlay">
+				<h1>Snapshots <br><br><small>Musings on 6 months of living &amp; traveling in Japan</small></h1>
+			</div-->
+		</div>
+		<!--div class="fpheading"> <h2> Featured Posts </h2>
+		<div id="main" class="scroll-animations">
+			<div id="itemA" class="animated fpost">
+				<div><img src='https://lh3.googleusercontent.com/X-f6Ui_1RHzaIvMleCqipSri0dZCqyzYWKmqGLKFVUAmSi0k1PEtUDOPiNxYFgpTkKjRaJa9Ku2N7XH6Bv4hKRe95NdOlpvOL7JBAk3ogUiJ8QU7G0QYs8KwAx3VfkBWAYYGMhRJoA=w2400'><br></div>
+				<h3> Shikisai no Oka </h3>
+			</div>
+			<div id="itemB" class="animated fpost">
+				<img src='https://lh3.googleusercontent.com/h4OwSmeD2j-zHtRI-VT0a5m3HjSl1q5aHstG5PLEN7Fx_2IJTSxqbKszmDiHPvEzRFNx6fIJduNJHT6uXlFwJi-eYDL4V65PRdHHyL_sE7ArSyUwwfpVgT7SKE2KS8_tVzLDmAyj4A=w2400'><Br>-->
+				<!--A small shoots to stardom with their annual, famous Sakura Matsuri (Cherry blossom festival). -->
+				<!--<h3> Ogawara </h3>
+			</div>
+			<div id="itemC" class="animated fpost">
+				<img src='https://lh3.googleusercontent.com/GBhl2LubchKZ5H5FGXd1lKc1cPpVXc3OaLrfjE1E1SoaztUWcwpygzhV74BPzkPOOKhtXZIJP2UvGTTnNTLiwQJ8yrN_7CZtpHCHBFC09Ut39i5_TDBfAfk8y4TFFKvIDRYmIhHkAQ=w2400'><br>
+				<h3> Sendai </h3>-->
+				<!-- I'm privileged to this place home for the next 5 months! -->
+			<!--</div>
+			<div id="textA" class="animated cap">
+				A jewel crowning the hills of Biei, Hokkaido
+			</div>
+			<div id="textB" class="animated cap">
+				In the spring, a small town shoots to stardom with its annual sakura matsuri (cherry blossom festival).
+			</div>
+			<div id="textC" class="animated cap">
+				I'm privileged to have called Sendai home for 5 months! A love letter to my favorite city in Japan. 
+			</div>
+		</div>-->
+		<br><br><br>
+
+		<div class="clr-row time">
+			<div class="clr-col-6 featured">
+				<div class="card-img">
+					<img #pic src='https://lh3.googleusercontent.com/lsXN3vXMqALFA8YqnCuSMahpLWl8hfHOVmQA-Pkd8A5RoQjeL39AsYZraovLlCIKA5Kxhj8VKxRYWWguDpqxL3gV6dHLIpkfEBNBSoun0eTJkv1UNix0pUcI_HJUBFjXW-9vdNe4Hw=w2400' width="650"/>
+				</div>
+				<div class="card-block">
+                	<p #title class="card-text">Hello</p>
+               	</div>
+            </div>
+		
+			<div class="cal-parent clr-col-6">
+				<div class="calendar-parent">
+					<div class="clr-row">	
+						<clr-icon #prevmonth class="btn-prev clr-col-2" (click)="changePrevMonth();" shape="caret left" size="36"></clr-icon>
+						<h2 #month class="clr-col-8">April 2018</h2>
+						<clr-icon #nextmonth class="btn-next clr-col-2" (click)="changeNextMonth();" shape="caret right" size="36"></clr-icon>
+					</div>
+
+
+					<div class="calendar clr-row">
+						<table>
+							<thead>
+								<tr>	
+								
+									<td>Su</td>
+									<td>Mo</td>
+									<td>Tu</td>
+									<td>We</td>
+									<td>Th</td>
+									<td>Fr</td>
+									<td>Sa</td>
+
+								</tr>
+
+							</thead>
+
+							<tbody #totalcal >
+								<tr>
+									<td class="event" (mouseover)='mouseOverDate($event)'><a href="4-1.html">1</a></td>
+									<td>2</td>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+									<td>6</td>
+									<td class="event" (mouseover)='mouseOverDate($event)'><a href="cindynethan.html">7</a></td>
+								</tr>
+								<tr>
+									<td class="event" (mouseover)='mouseOverDate($event)'><a href="cindynethan.html">8</a></td>
+									<td class="event" (mouseover)='mouseOverDate($event)'><a href="ogawara.html">9</a></td>
+									<td class="event" (mouseover)='mouseOverDate($event)'><a href="tsuji.html">10</a></td>
+									<td>11</td>
+									<td>12</td>
+									<td>13</td>
+									<td>14</td>
+								</tr>
+								<tr>
+									<td>15</td>
+									<td>16</td>
+									<td>17</td>
+									<td>18</td>
+									<td>19</td>
+									<td>20</td>
+									<td class="event" (mouseover)='mouseOverDate($event)'><a href="iwanuma.html">21</a></td>
+
+								</tr>
+
+								<tr>
+									<td class="event" (mouseover)='mouseOverDate($event)'><a href="hanyu.html">22</a></td>
+									<td>23</td>
+									<td>24</td>
+									<td>25</td>
+									<td>26</td>
+									<td>27</td>
+									<td>28</td>
+								</tr>
+								<tr>
+									<td>29</td>
+									<td>30</td>
+									<td class="next-month"></td>
+									<td class="next-month"></td>
+									<td class="next-month"></td>
+									<td class="next-month"></td>
+									<td class="next-month"></td>
+								</tr>
+
+							</tbody>
+
+						</table>
+
+					</div> <!-- end calendar -->
+
+				</div> <!-- end container -->
+			</div>
+		</div>
+		<!--<div class="color">-->
+			
+		<!--div class="categories">
+			<div id="catA" class="cat">
+				<img src="https://lh3.googleusercontent.com/FXtHNuWcDYF2xwL6S6ajS8xT1bQAUQgbhAXgG60vaLSbNiXBV_k_oDMjlOpXOtHY3XRZajc_7s_DDAlYK5lq0zOZyMWL36hJkrgYtp5PcMSpASrB1J3Xkuj6W59gc6X8Q9ysI9-eRg" width=300px/-->
+				<!--img href="food.html" src="https://lh3.googleusercontent.com/fZeWtfXcWYgptIeKfoNGexSaqxnhN-LFbt3kT5iaHrnoJrmSwe50EYbk3FgLSiYlmok_vvxGjwHpg7mRv7LiMhzhu0hrMck1GD-XEhgfyI6C_c5XEfXUblQ37XW_yWyBl9-RV2Wydw=w2400" width=300px/>
+				<span class="label">Food</span>
+				<!-- food -->
+			<!--/div>
+		</div>
+			<!--div id="catB" class="cat">
+				<img src="https://lh3.googleusercontent.com/xh3pPOrzVGrlpnecomaVS0_2Zg5CccEfwYbUrTLAsURGfAR6CfOfZsWYkIalYgZ9kASpuoIWlL_F1m8NFF5MaU4vvP9u2cscl_H4adbnQc7lviu1bh3PE-AOFsTHg47ZlMh2pQexTw" width=300px/>
+				<span class="label">Travel</span>
+				<!-- travel -->
+			<!--/div>
+			<div id="catC" class="cat">
+				<img src="https://lh3.googleusercontent.com/McJoUTnKAGnmpbLEgLzRVtTLRRA7aTTJzaP_gUKJBuMudMmL8cwLNZeC2DHLXA10eqLY2LXNoLL1jyHZiaFa9zHQ325dgnoOUODKmE0tX6xSTo33E07hfZtAp_dyLGts94O_EzRl5g" width=300px/>
+				<span class="label"> Daily Life </span>
+				<!-- daily life -->
+			<!--/div>
+			<div id="catD" class="cat">
+				<img src="https://lh3.googleusercontent.com/X9qRJGXhodqqyfHGh7K0cgAc070-ovyPiQN_3GVXMJV_cLstaIdGJxyjRcBLpzzWOmctTXvXRBWybJcfBEj3bZ9FZSVGamnKsHJuCY1hD7vQKliPMQOV3Xwrr-f46fmnfHh8TNb9jA" width=300px/>
+				<span class="label"> Faith </span>
+				<!-- Nature -->
+			<!--/div-->
+			<!--div id="catE"-->
+				<!-- faith -->
+				<!--img src="https://lh3.googleusercontent.com/IvTcCqycZMbgXRKsURD_huOuqto5GaYmVxgRhDRZNU-P0qE2xRuqgfIYv7xSiCj5Unwji4fP8p_vsxIpbPuXE6xP8FXgRXcWf1-9gOWk47cfI-3O2i0lOhtTuj8paixxdjW6t3D1sA" width=300px/>
+			</div-->
+		<!--/div><div class="yellow"></div><div class="green"></div><div class="mint"></div><div class="blue"></div-->
+	<!--</div>-->
+		<!--script src="blog.js"></script-->	

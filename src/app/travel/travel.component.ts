@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Injectable, Renderer2, ViewEncapsulation} from '@angular/core';
+import { Injectable, Renderer2, ViewEncapsulation, ComponentFactoryResolver} from '@angular/core';
 import { ViewChild, ElementRef } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -28,7 +28,11 @@ export class TravelComponent implements OnInit {
 
   public safeURL: any; 
 	
-  constructor(private rd: Renderer2, private _sanitizer: DomSanitizer, private router: Router, private route: ActivatedRoute) { 
+  constructor(private rd: Renderer2, 
+              private _sanitizer: DomSanitizer, 
+              private router: Router, 
+              private route: ActivatedRoute,
+              private componentResolver: ComponentFactoryResolver) { 
     //this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/a28vD_r6L8o");
     this.safeURL = this._sanitizer.bypassSecurityTrustResourceUrl(
       "https://www.youtube.com/embed/a28vD_r6L8o?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=a28vD_r6L8o");
@@ -240,8 +244,8 @@ export class TravelComponent implements OnInit {
 
   goToArticle(event): any {
     let articleId = '' + this.curMonth + "-" + event.target.innerText;
-    console.log(articleId);
-    this.router.navigate(['/post', articleId]);
+    console.log("goToArticle: " + articleId);
+    this.router.navigate(['/post']);
     //find article template
     //pass template to 
   }
